@@ -6,11 +6,11 @@ import AddToDo from './components/addToDo';
 
 export default function App() {
   const [todos, setTodos] = useState([
-    { title: 'Be a star team member in a dev role', key: '1' },
-    { title: 'Crush interviews', key: '2' },
+    { title: 'Be a star team member in a dev role', key: '5' },
+    { title: 'Crush interviews', key: '4' },
     { title: 'Finish Native App', key: '3' },
-    { title: 'Walk the dog', key: '4' },
-    { title: 'Have morning coffee', key: '6' }
+    { title: 'Walk the dog', key: '2' },
+    { title: 'Have morning coffee', key: '1' }
   ]);
 
   const pressHandler = (key) => {
