@@ -51,7 +51,12 @@ export default function App() {
 
       <View style={styles.content}>
         <AddToDo submitHandler={submitHandler} />
-        <Text style={styles.current}>Current ToDos</Text>
+        <View style={styles.currentCont}>
+          <Text style={styles.current}>Current ToDos</Text>
+        </View>
+
+        <Text style={styles.del}>Tap a task once it's been completed, to delete it.</Text>
+        
         <View style={styles.list}>
           <FlatList
             data={todos}
@@ -72,19 +77,31 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'lemonchiffon',
   },
+  currentCont: {
+    backgroundColor: 'teal',
+    marginTop: 20,
+    borderRadius: 10
+  },
   current: {
+    fontWeight: 'bold',
+    fontFamily: 'Futura',
     textAlign: 'center',
     fontSize: 24,
     color: 'white',
-    backgroundColor: 'teal',
-    fontWeight: 'bold',
-    fontFamily: 'Futura',
-    marginTop: 20
   },
   content: {
-    padding: 40
+    flex: 1,
+    padding: 40,
   },
   list: {
+    flex: 1,
+    marginTop: 5,
+  },
+  del: {
+    fontWeight: 'bold',
+    fontFamily: 'Futura',
+    textAlign: 'center',
+    color: 'black',
     marginTop: 5
   }
 });

@@ -25,8 +25,9 @@ const styles = StyleSheet.create({
     input: {
         marginBottom: 10,
         paddingHorizontal: 8,
-        paddingVertical: 6,
+        paddingVertical: 8,
         borderBottomWidth: 1,
-        borderBottomColor: 'rebeccapurple'
+        borderBottomColor: 'rebeccapurple',
+        fontFamily: 'Futura'
     }
 })
